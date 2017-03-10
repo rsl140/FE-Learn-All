@@ -1,0 +1,12 @@
+//font-style
+@mixin font($font,$colors,$px){
+	font-family: $font;
+	color: $colors;
+	font-size: $px;
+}
+//opacity
+@mixin opacity($op:0.5){
+	opacity: $op;
+	webkit-opacity: $op;
+	filter:alpha(opacity=($op * 100)); //针对 IE8 以及更早的版本
+}
