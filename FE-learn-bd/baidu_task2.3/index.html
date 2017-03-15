@@ -34,18 +34,8 @@
  * 读取id为source的列表，获取其中城市名字及城市对应的空气质量
  * 返回一个数组，格式见函数中示例
  */
+var addto = document.getElementById("resort");
 function getData() {
-  /*
-  coding here
-  */
-
-  /*
-  data = [
-    ["北京", 90],
-    ["北京", 90]
-    ……
-  ]
-  */
   var getlist = document.getElementById("source").getElementsByTagName("li");
   var data = [];
   // 遍历并输入至data
@@ -77,7 +67,6 @@ function sortAqiData(data) {
  * 格式见ul中的注释的部分
  */
 function render(data) {
-  var addto = document.getElementById("resort");
   for (var i = 0; i < data.length; i++) {
     addto.innerHTML += "<li> 第" +  (i + 1)  + "名：" + data[i] + "</li>";
   }
@@ -93,10 +82,9 @@ function btnHandle() {
 function init() {
 
   // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
+  addto.innerHTML = "";//清空
   btnHandle();
 }
-
-init();
 
 </script>
 </body>
