@@ -25,9 +25,7 @@ function getvale(){
 //绑定点击事件
 function leftIn(){
 	var num = getvale();
-	if (num === false) {
-	}
-	else{
+	if (num !== false) {
 		data.unshift(num);
 		outTo();
 	}
@@ -35,9 +33,7 @@ function leftIn(){
 
 function rightIn(){
 	var num = getvale();
-	if (num === false) {
-	}
-	else{
+	if (num !== false) {
 		data.push(num);
 		outTo();
 	}
@@ -45,9 +41,7 @@ function rightIn(){
 
 function leftOut(){
 	var num = getvale();
-	if (num === false) {
-	}
-	else{
+	if (num !== false) {
 		alert(data.shift());
 		outTo();
 	}
@@ -55,15 +49,21 @@ function leftOut(){
 
 function rightOut(){
 	var num = getvale();
-	if (num === false) {
-	}
-	else{
+	if (num !== false) {
 		alert(data.pop());
 		outTo();
 	}
 }
 //遍历数组并输出
 function outTo(){
+	var str = document.getElementById("views");
+	str.innerHTML = "";
+	for (var i = 0; i < data.length; i++) {
+		str.innerHTML += "<div class='viewout' title='"+ data[i] +"' style='height:" + data[i] + "px'></span>";
+	}
+}
+//排序
+function paiXu(){
 	var str = document.getElementById("views");
 	str.innerHTML = "";
 	data.sort(function(a,b){
