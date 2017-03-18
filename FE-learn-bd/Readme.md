@@ -9,7 +9,7 @@
 [task2.1](http://ife.baidu.com/course/detail/id/93)<br>
 [task2.2](http://ife.baidu.com/course/detail/id/91)<br>
 [task2.3](http://ife.baidu.com/course/detail/id/98)<br>
-[task2.4](http://ife.baidu.com/course/detail/id/103<br>
+[task2.4](http://ife.baidu.com/course/detail/id/103)<br>
 [task2.5](http://ife.baidu.com/course/detail/id/105)<br>
 
 
