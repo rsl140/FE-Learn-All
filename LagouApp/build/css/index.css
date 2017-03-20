@@ -1,0 +1,36 @@
+/*颜色变量*/
+.head {
+  background-color: #12d5bb;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  padding: 0 7px;
+}
+.head .text {
+  color: #fff;
+}
+.head .custom {
+  background-color: #feae11;
+  border-color: #feae11;
+  color: #12d5bb;
+  border-style: dashed;
+  margin-top: 0.18666667rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-size: 0.42666667rem;
+}
