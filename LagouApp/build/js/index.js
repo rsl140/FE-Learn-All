@@ -9,6 +9,10 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',function($st
 		url: '/main',
 		templateUrl: 'view/main.html',
 		controller: 'mainCtrl'
+	}).state('position',{
+		url:'/position/:id',
+		templateUrl:'view/position.html',
+		controller:'positionCtrl'
 	});
 	$urlRouterProvider.otherwise('main');
 }]);
@@ -36,6 +40,21 @@ angular.module('app').controller('mainCtrl', ['$scope', function($scope) {
 
 'use strict';
 
+ angular.module('app').controller('positionCtrl', ['$scope', function($scope) {
+
+}]);
+'use strict';
+
+angular.module("app").directive('appCompany', [function() {
+    return {
+        restrict: 'A',
+        replace: true,
+        templateUrl: 'view/template/company.html'
+    };
+}]);
+
+'use strict';
+
 angular.module('app').directive('appFoot', [function(){
 	return{
 		restrict: 'A',
@@ -52,6 +71,40 @@ angular.module('app').directive('appHead', [function(){
 		templateUrl: 'view/template/head.html'//模板位置
 	};
 }]);
+'use strict';
+
+angular.module('app').directive('appHeadBar', [function() {
+    return {
+        restrict: 'A',
+        replace: true, //替换
+        templateUrl: 'view/template/headBar.html', //模板位置
+        scope: {
+            text: '@'
+        },
+        link: function(scope) {
+            scope.back = function() {
+                window.history.back();
+            };
+        }
+    };
+}]);
+
+'use strict';
+
+angular.module("app").directive('appPositionInfo', [function() {
+    return {
+        restrict: 'A',
+        replace: true,
+        templateUrl: 'view/template/positionInfo.html',
+        scope: {
+            isActive: '='
+        },
+        link: function($scope) {
+            $scope.imagePath = $scope.isActive ? 'image/star-active.png' : 'image/star.png';
+        }
+    }
+}]);
+
 'use strict';
 
 angular.module('app').directive('appPositionList', [function() {

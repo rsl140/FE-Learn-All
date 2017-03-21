@@ -17,6 +17,11 @@
   padding-left: 0.4rem;
   padding-right: 0.4rem;
 }
+.head .back-btn {
+  font-size: 20px;
+  width: 1rem;
+  left: 0;
+}
 .foot {
   border-top: 1px solid #d4d4d4;
   padding: 0;
@@ -74,8 +79,36 @@
 .position-list .item .text {
   margin: 0;
 }
+.postiton-info {
+  border-bottom: 1px solid #ccc;
+  padding: 26px 10px 18px 10px;
+}
+.postiton-info .ml {
+  margin-left: 20px;
+}
+.postiton-info img {
+  right: 24px;
+  top: 41px;
+}
+.company-info {
+  padding: 20px 15px 13px 85px;
+}
+.company-info img {
+  width: 1.6rem;
+  height: 1.6rem;
+  left: 15px;
+}
+.company-info p {
+  margin-top: 0;
+}
 .bg-w {
   background-color: #fff;
+}
+.c-w {
+  color: #fff;
+}
+.c-r {
+  color: red;
 }
 .f-l {
   float: left;
@@ -92,30 +125,65 @@
 .d-b {
   display: block;
 }
+.p-a {
+  position: absolute;
+}
+.p-r {
+  position: relative;
+}
 .ta-l {
   text-align: left;
-}
-.ta-r {
-  text-align: right;
 }
 .ta-c {
   text-align: center;
 }
-.va-m {
-  vertical-align: middle;
+.ta-r {
+  text-align: right;
 }
 .va-t {
   vertical-align: top;
 }
+.va-m {
+  vertical-align: middle;
+}
 .va-b {
   vertical-align: bottom;
+}
+.bottom-btn {
+  position: fixed;
+  height: 1.2rem;
+  background-color: #12d5bb;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.position-desc {
+  margin-top: 10px;
+}
+.position-desc h5 {
+  font-size: 0.42666667rem;
+  border-bottom: 1px solid #ccc;
+  margin-top: 0;
+  padding-left: 10px;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+}
+.position-desc pre {
+  padding-left: 10px;
+  margin-left: 0;
 }
 html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #eee;
+  margin: 0;
 }
 body {
+  background-color: #eee;
   font-size: 0.42666667rem;
+}
+button {
+  border-width: 0;
+  outline-width: 0;
 }
