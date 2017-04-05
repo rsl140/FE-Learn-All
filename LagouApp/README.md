@@ -1,6 +1,6 @@
-#仿拉钩webapp
+# 仿拉钩webapp
 
-##工具使用
+## 工具使用
 
 使用angular、less
 
@@ -16,7 +16,7 @@ node v4.4.7(避免插件不兼容)
 页面跳转无刷新，利用路由控制页面跳转，切换流畅、前后端分离
 ***
 
-##bower使用
+## bower使用
 
 ```
 	bower init
@@ -29,7 +29,7 @@ node v4.4.7(避免插件不兼容)
 ```
 ***
 
-##gulp使用
+## gulp使用
 
 ```
 	npm i -g gulp //安装gulp
@@ -41,7 +41,7 @@ node v4.4.7(避免插件不兼容)
 	npm i --save-dev gulp-clean gulp-concat gulp-connect gulp-cssmin gulp-imagemin gulp-less gulp-load-plugins gulp-plumber gulp-uglify open //模块安装
 ```
 ***
-##目录说明
+## 目录说明
 
 ```
 	build //构建代码放置目录
