@@ -1,8 +1,10 @@
 <ul class="position-list bg-w">
-    <li ui-sref="position({id:item.id})" class="item" ng-repeat="item in data">
-        <img class="f-l logo" ng-src="{{item.imgSrc}}">
+    <li ui-sref="position({id:item.id})" class="item" ng-repeat="item in data|filterByObj:filterObj">
+        <img class="f-l logo" ng-src="{{item.imageUrl}}">
         <h3 class="title" ng-bind="item.name"></h3>
-        <p class="text" ng-bind="item.companyName+'['+item.city+']'+' '+item.industry"></p>
-        <p class="text" ng-bind="item.time"></p>
+        <p class="text" ng-bind="item.companyName+'['+item.cityName+']'+' '+item.industryName +' '+item.scaleName"></p>
+        <p class="text" ng-bind="item.salaryName"></p>
+        <p class="text" ng-bind="item.date"></p>
+        <div class="clear"></div>
     </li>
 </ul>
