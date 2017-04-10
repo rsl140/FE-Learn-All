@@ -41,6 +41,19 @@ node v4.4.7(避免插件不兼容)
 	npm i --save-dev gulp-clean gulp-concat gulp-connect gulp-cssmin gulp-imagemin gulp-less gulp-load-plugins gulp-plumber gulp-uglify open //模块安装
 ```
 ***
+## 第三方依赖
+
+```
+	angular 
+
+	ui.router //路由 功能更丰富 可多重嵌套等
+
+	validation //表单验证
+
+	ngCookies //缓存
+
+```
+***
 ## 目录说明
 
 ```
@@ -51,4 +64,16 @@ node v4.4.7(避免插件不兼容)
 	src //源码
 
 	test //单元测试，集成测试
+
+    开发页面：
+
+	view //视图存放
+
+	controller //业务逻辑存放目录 
+
+		directive //公共指令存放
+
+	service //服务指令存放
+
+	filter //过滤器
 ```
