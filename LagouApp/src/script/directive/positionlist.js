@@ -1,13 +1,24 @@
 'use strict';
 
-angular.module('app').directive('appPositionList', [function() {
+angular.module('app').directive('appPositionList', ['$http', function($http) {
     return {
         restrict: 'A',
         replace: true,
         templateUrl: 'view/template/positionlist.html',
         scope: {
-        	data: '=',
-        	filterObj: '='
+            data: '=',
+            filterObj: '=',
+            isFavorite: '='
+        },
+        link: function($scope) {
+            $scope.select = function(item) {
+                $http.post('data/favorite.json', {
+                    id: item.id,
+                    select: !item.select
+                }).then(function(resp) {
+                    item.select = !item.select;
+                });
+            };
         }
     };
 }]);
