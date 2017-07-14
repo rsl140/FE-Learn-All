@@ -1,0 +1,138 @@
+html,body,div,input,p,a,img,h1,h2,h3,h4,h5,h6{
+	padding: 0;
+	margin: 0;
+}
+
+
+.clearfix:befor,.clearfix:after{
+	content: " ",
+	display:table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	*zoom:1;
+}
+
+.search_main{
+	min-height: 100%;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-bottom: 20px; 
+	position: relative;
+}
+.search_main h1{
+	text-align: center;
+}
+.search_input{
+	margin-top: 20px;
+	width: 70%;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto; 
+}
+.search_input input,.search_input button{
+	height: 100%;
+}
+.search_input input{
+	width: 70%;
+}
+.search_input button{
+	width: 28%;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: none;
+    border-bottom: 1px solid #2d78f4;
+    outline: medium;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+.search_input button:hover{
+	background: #317ef3;
+	border-bottom: 1px solid #2868c8;
+}
+.totle{
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.img,.content{
+	float: left;
+}
+.content{
+	padding-left: 10px;
+}
+.table{
+	margin-top: 10px;
+}
+#display{
+	width: 70%;
+	margin: 0 auto;
+}
+.page{
+	width: 50%;
+	margin: 0 auto;
+	display: none;
+}
+/*加载动画特效*/
+.spinner {
+  display: none;
+  /*visibility: hidden;*/
+  width: 80%;
+  margin-top: 10px;
+  height: 60px;
+  text-align: center;
+  font-size: 10px;
+}
+ 
+.spinner > div {
+  background-color: #67CF22;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+   
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+ 
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+ 
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+ 
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) } 
+  20% { -webkit-transform: scaleY(1.0) }
+}
+ 
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
