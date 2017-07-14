@@ -1,0 +1,77 @@
+body{
+	padding-bottom: 70px;
+}
+/*navbar*/
+nav{
+	background-color: #fff0e9;
+	height: 50px;
+}
+nav div{
+	/*color: #58453C;*/
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+nav div a{
+	display: block;
+	color: #4f2e1e;
+}
+nav div:hover,.check{
+	background-color: #58453c;
+}
+
+.check a,nav div a:hover{
+	color: #fff0e9;
+}
+/*index*/
+.imgofme{
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	border: 3px solid #947a6d;
+	background: url(../img/1.jpg) no-repeat;
+	background-position: -35px -70px;
+	display: block;
+	margin: auto;
+	/*float: left;*/
+}
+.imgoftitle{
+	padding: 20px;
+	text-align: center;
+}
+/*demo*/
+.demo{
+	margin-top: 50px;
+}
+th{
+	width: 100px;
+	text-align: center;
+}
+/*about*/
+.about{
+	width: 320px;
+	height: 100px;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*footer*/
+footer{
+	background-color: #4f2e1e;
+	color: #fff0e9;
+	height: 50px;
+}
+.github{
+	float: left;
+	line-height: 50px;
+	padding-left: 40px;
+}
+.name{
+	float: right;
+	line-height: 50px;
+	color: #FFF0E9;
+	padding-right: 40px;
+}

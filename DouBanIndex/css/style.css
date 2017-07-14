@@ -1,0 +1,52 @@
+body{
+	font-size: 14px;
+}
+
+header{
+	width: 100%;
+	min-width: 1000px;
+	height: 28px;
+	background-color: #545652;
+	color: #d5d5d5;
+	line-height: 28px;
+	font-size: 12px;
+}
+header a{
+	padding: 0 12px;
+}
+a{
+	color:#d5d5d5;
+	text-decoration: none;
+}
+a:hover{
+	color:#fff;
+
+}
+
+.header-info{
+	width: 24%;
+}
+.header-login{
+	
+}
+.header-reg{
+	margin-right: 17px;
+}
+.header-nav{
+	width: 70%;
+	float: left;
+}
+.header-nav li{
+	display: inline-block;
+}
+
+/*通用*/
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.cb{
+	clear: both;
+}

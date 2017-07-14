@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xiao_缌的微博_微博</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--导航栏-->
+    <nav class="navbar navbar-default navbar-fixed-top weibo_nav" role="navigation">
+        <div class="container-fluid">
+          <!-- 移动端显示的小标签 -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              <a class="navbar-brand weibo" href="#"></a>
+            </div>
+
+          <!-- 导航栏各控件 -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
+              <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group search_weibo">
+                      <input type="text" class="border-none" placeholder="Search">
+                      <img src="img/search.svg">
+                  </div>
+                </form>
+                <ul class ="nav navbar-nav navbar-right">
+                <li class="clearfix"><a href ="#"><div class="fl"><img class="width18" src="img/home.svg"></div><div class="fl margin_top_2">首页</div></a></li>
+                <li class="clearfix"><a href ="#"><div class="fl"><img class="width18" src="img/video.svg"></div><div class="fl margin_top_2">视频</div></a></li>
+                <li class="clearfix"><a href ="#"><div class="fl"><img class="width18" src="img/found.svg"></div><div class="fl margin_top_2">发现</div></a></li>
+                <li class="clearfix"><a href ="#"><div class="fl"><img class="width18" src="img/game.svg"></div><div class="fl margin_top_2">游戏</div></a></li>
+                <li class="clearfix"><a href ="#"><div class="fl"><img class="width18" src="img/people.svg"></div><div class="fl margin_top_2">Xiao_缌</div></a></li>
+                <li class ="dropdown">
+                  <a href ="#" class="dropdown-toggle" data-toggle="dropdown"><img class="width18" src="img/email.svg"> <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">@我的</a></li>
+                      <li><a href ="#">评论</a></li>
+                      <li><a href ="#">赞</a></li>
+                      <li class ="divider"></li>
+                      <li><a href ="#">私信</a></li>
+                      <li><a href ="#">未关注人私信</a></li>
+                      <li><a href ="#">群通知</a></li>
+                      <li class ="divider"></li>
+                      <li><a href ="#">消息设置</a></li>
+                    </ul>
+                </li>
+                <li class ="dropdown">
+                    <a href ="#" class="dropdown-toggle" data-toggle="dropdown"><img class="width18" src="img/setting.svg"> <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">帐号设置</a></li>
+                      <li><a href ="#">会员中心</a></li>
+                      <li><a href ="#">V认证</a></li>
+                      <li><a href ="#">帐号安全</a></li>
+                      <li><a href ="#">隐私设置</a></li>
+                      <li><a href ="#">消息设置</a></li>
+                      <li><a href ="#">帮助中心</a></li>
+                      <li class ="divider"></li>
+                      <li><a href ="#">退出</a></li>
+                    </ul>
+                </li>
+                <li class="clearfix"><a href ="#"><div class="fl" style="background-color: #fe7e00;"><img class="width18" src="img/edimt.svg"></div></a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div class="content_width">
+      <!-- 个人中心图片和导航 -->
+      <div class="content_header"></div>
+      <div class="content_header_nav container">
+        <div>
+           <div class="col-md-4 col-xs-4">我的主页</div>
+           <div class="col-md-4 col-xs-4">我的相册</div>
+           <div class="col-md-4 col-xs-4">管理中心</div>
+        </div>
+      </div>
+    <!-- 主要内容 -->
+<div class="content_body">
+<div class="clearfix row">
+        <div class="col-md-4 col-xs-12">
+            <div class="content_body_left_one container">
+              <div class="row">
+                  <div class="col-md-4 col-xs-4">
+                    <strong>267</strong>
+                    <span>关注</span>
+                  </div>
+                  <div class="col-md-4 col-xs-4 border_left_solid">
+                    <strong>313</strong>
+                    <span>粉丝</span>
+                  </div>
+                  <div class="col-md-4 col-xs-4 border_left_solid">
+                    <strong>2570</strong>
+                    <span>微博</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="content_body_left_tow">
+            <div class="content_body_left_tow_lineone border_bottom_solid">
+                <div class="col-md-4 col-xs-4 content_body_left_tow_lineone_weibo"></div>
+                <div class="col-md-4 col-xs-4 border_left_solid "><span class="content_body_left_tow_lineone_leval">Lv.20</span></div>
+            </div>
+                
+            <div class="content_body_left_tow_linetow border_bottom_solid">
+              <ul class="height169">
+                  <li class="border_bottom_solid"><span class="glyphicon glyphicon-map-marker"></span>四川 成都</li>
+                  <li class="border_bottom_solid"><span class="glyphicon glyphicon-user"></span>毕业于 成都高新实验中学</li>
+                  <li class="border_bottom_solid"><span class="glyphicon glyphicon-lock"></span>公司 博彦科技</li>
+                  <li class="border_bottom_solid"><span class="glyphicon glyphicon-dashboard"></span>1991年5月9日</li>
+                  <li><span class="glyphicon glyphicon-link"></span>个性域名： 140l</li>
+                </ul>
+            </div>
+            <div class="content_body_left_tow_linethree">编辑个人资料 &gt;</div>
+          </div>
+
+          <div class="content_body_left_three">
+              <img src="img/lefticon1.jpg">
+              <a href="#">添加粉丝群</a>
+          </div>
+
+          <div class="content_body_left_four">
+            <div class="content_body_left_four_lineone">赞</div>
+            <div class="content_body_left_four_linetow border_bottom_solid">
+              <ul>
+                <li>
+                  <img src="img/lefticon1.jpg">7777
+                </li>
+                <li>
+                  <img src="img/lefticon1.jpg">7777
+                </li>
+              </ul>
+            </div>
+            <div class="content_body_left_four_linethree">查看更多 &gt;</div>
+          </div>
+
+          <div class="content_body_left_five">
+            <div class="content_body_left_four_lineone">
+              我的微博人气
+            </div>
+          </div>
+        </div>
+        <!-- 主页面 内容 -->
+        <div class="col-md-8 col-xs-12">
+          <div class="content_body_main_nav container">
+            <div class="row">
+              <div class="active col-md-2 col-xs-2">全部</div>
+              <div class="col-md-2 col-xs-2">热门</div>
+              <div class="col-md-2 col-xs-2">更多</div>
+            </div>
+          </div>
+          
+          <div class="content_body_main_content">
+            <div class="content_body_main_content_head clearfix">
+              <div class="content_body_main_content_head_img">
+                <a href="#"><img src="img/head.jpg"></a>
+              </div>
+              <div>
+                <ul class="content_body_main_content_head_ul">
+                  <li class="font_bold font_14px"><a href="#">Xiao_缌</a></li>
+                  <li class="color_808080">10月12日 18:14 来自 iPhone 6s</li>
+                  <li class="font_14px">转发微博</li>
+                </ul>
+              </div>
+            </div>
+            <div class="content_body_main_content_detail">
+              <ul>
+                <li class="font_bold"><a href="#">@每天搞笑排行榜</a></li>
+                <li>世界上最浪费生命的三件事：一、评论。别人不靠你活着，何况你未必了解他的全部，论人长短不如取人之长补己之短。二、责怪。责怪人人都会，却无法改变现状。共勉之所以好过责怪，在于既提高了别人，也欢喜了大家。三、担忧。准备不足或者无力改变时才会担忧，前者需要行动，后者需要放下。</li>
+                <li class="row">
+                  <div class="col-md-5">5月26日 00:01 来自 小米手机3</div>
+                  <div class="col-md-6 col-md-offset-1">
+                      <ul class="content_body_main_content_detail_van">
+                        <li class="col-md-3"><a href="#"><img src="img/transmit.svg">274</a><span class="border_1"></span></li>
+                        <li class="col-md-3"><a href="#"><img src="img/comment.svg">33</a><span class="border_1"></span></li>
+                        <li class="col-md-3"><a href="#"><img src="img/zan.svg">234</a></li>
+                      </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content_body_main_content_footer clearfix">
+                <div class="col-md-3 col-xs-3">
+                  <a href="#">阅读   推广321</a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                  <a href="#"><img src="img/transmit.svg"> 274</a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                  <a href="#"><img src="img/comment.svg"> 评论</a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                  <a href="#"><img src="img/zan.svg"> 赞</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/indexjs.js"></script>
+  </body>
+</html>

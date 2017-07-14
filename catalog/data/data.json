@@ -1,0 +1,9 @@
+// 待用
+{
+	"data":[
+		{"num":"1","title":"音乐查询","detail":"基于豆瓣api编写的音乐查询","urllook":"https://github.com/rsl140/Music","url":"https://github.com/rsl140/Music"},
+		{"num":"2","title":"克隆微博","detail":"个人微博页面复制(排版练习)","urllook":"https://github.com/rsl140/cloneWeibo","url":"https://github.com/rsl140/cloneWeibo"},
+		{"num":"3","title":"IFE-1.4","detail":"百度IFE-1.4定位任务练习","urllook":"https://rsl140.github.io/FE-Learn-All/FE-learn-bd/baidu_xiaowei_demo4","url":"https://github.com/rsl140/FE-Learn-All/tree/master/FE-learn-bd/baidu_xiaowei_demo4"},
+		{"num":"4","title":"IFE-1.6","detail":"百度IFE-1.6模拟报纸排版","urllook":"https://rsl140.github.io/FE-Learn-All/FE-learn-bd/baidu_task1.6","url":"https://github.com/rsl140/FE-Learn-All/tree/master/FE-learn-bd/baidu_task1.6"}
+	]
+}
