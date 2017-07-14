@@ -6,11 +6,9 @@ function numClick(num) {
         case '-':
         case '*':
         case '/':
-            if (!isTrue()) {
-            	temp += num.innerHTML;
-            	document.getElementById('texts').value = temp;
+            if (isTrue()) {
+            	break;
             }
-            break;
         default:
             temp += num.innerHTML;
             document.getElementById('texts').value = temp;
@@ -35,7 +33,7 @@ function delect() {
 }
 
 function isTrue() {
-    var lastChar = temp.substr(temp.length - 1);
+    var lastChar = temp.toString().split("").pop();//提取最后一个字符
     var flag = false;
     switch (lastChar) {
         case '+':
