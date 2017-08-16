@@ -8,6 +8,21 @@ body{
 }
 /*#3F72AF,#112D4E*/
 
+@media (min-width: 1200px) { 
+	body{
+		background: url(../img/wolfbg.jpg);
+		background-position: top;
+		background-size: cover;
+	}
+}
+@media (max-width: 1023px) {
+	body{
+		background: url(../img/mb_bcbg.jpg);
+		background-position: top;
+		background-size: cover;
+	}
+}
+
 ul,li{
 	margin: 0;
 	padding: 0;
@@ -15,10 +30,50 @@ ul,li{
 li{
 	list-style: none;
 }
+/*白色遮罩层*/
+.whitebg{
+	background-color: rgba(255, 255, 255, 0.5);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
 .li-card{
 	margin-bottom: 3px;
-	background-image: url(../img/pm.jpeg);
+	background-image: url(../img/card_bg.png);
 	background-size:100% 100%;
+	position: relative;
+	color: #fff;
+}
+.num{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	line-height: 23px;
+	border-radius: 0 100% 0 0;
+	background-color: #fff;
+	color: #3F72AF;
+	padding-left: 3px;
+	z-index: 3;
+}
+.peope-name{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+	height: 16px;
+	line-height: 16px;
+	color: #000;
+	z-index: 2;
+}
+.game-title{
+	position: absolute;
+	top: 50%;
+	left: 45%;
 }
 #chat{
 	border: 1px solid #3F72AF;
@@ -40,16 +95,23 @@ li{
     resize:none
 }
 #chat button{
-	width: 80px;
+	
     height: 30px;
-    position: absolute;
     display: inline-block;
-    right: 4px;
-    bottom: 4px;
     color: #FFF;
     font-size: 14px;
     background-color: #2d8cf0;
     border-radius: 4px;
     outline: none;
     border: none;
+}
+#chat-display{
+	padding: 0;
+}
+#chat-input{
+	padding: 3px;
+}
+
+.bc{
+	background-image: url(../img/villager.jpg);
 }

@@ -8,6 +8,20 @@ body{
 	bottom: 0;
 	top: 0;
 }
+@media (min-width: 1200px) { 
+	body{
+		background: url(../img/wolfbg.jpg);
+		background-position: top;
+		background-size: cover;
+	}
+}
+@media (max-width: 1023px) {
+	body{
+		background: url(../img/mb_bcbg.jpg);
+		background-position: top;
+		background-size: cover;
+	}
+}
 section{
 	position: absolute;
 	width: 100%;

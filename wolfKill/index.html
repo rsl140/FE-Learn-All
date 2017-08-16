@@ -8,88 +8,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 
 <body>
 <!-- Copyright © 2017 Summer. -->
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <!-- 手机时候的最小化菜单按钮-->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">开始游戏</a>
+    <div class="whitebg">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <!-- 手机时候的最小化菜单按钮-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">开始游戏</a>
 
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            房间设置 
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                房间设置 
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">9人局</a></li>
+                                <li><a href="#">12人局(预女猎守)</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">自定义</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                游戏进程设置 
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">天黑请闭眼</a></li>
+                                <li><a href="#">竞选警长</a></li>
+                                <li><a href="#">投票</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">游戏结束</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            欢迎你，xs
                             <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">9人局</a></li>
-                            <li><a href="#">12人局(预女猎守)</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">自定义</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        欢迎你，xs
-                        <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">改密</a></li>
-                            <li><a href="#">登出</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">改密</a></li>
+                                <li><a href="#">登出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
 
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <div id="left-card" class="col-lg-2 col-md-2 col-xs-4 col-sm-4">
-            <ul>
-                <li class="li-card"></li>
-                <li class="li-card"></li>
-                <li class="li-card"></li>
-                <li class="li-card"></li>
-                <li class="li-card"></li>
-                <li class="li-card"></li>
-            </ul>
-        </div>
-        <div id="chat" class="col-lg-8 col-md-8 col-xs-4 col-sm-4">
-            <div id="chat-display" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                天黑请闭眼
+        </nav>
+        <div class="container-fluid">
+          <div class="row">
+            <div id="left-card" class="col-lg-2 col-md-2 col-xs-4 col-sm-4">
+                <ul>
+                    <li class="li-card">
+                        <div class="num">1</div>
+                        <div class="peope-name">name</div>
+                    </li>
+                    <li class="li-card">
+                        <div class="num">2</div>
+                        <div class="peope-name">name</div>
+                    </li>
+                    <li class="li-card">
+                        <div class="num">3</div>
+                        <div class="peope-name">name</div>
+                    </li>
+                    <li class="li-card">
+                        <div class="num">4</div>
+                        <div class="peope-name">name</div>
+                    </li>
+                    <!-- <li class="li-card">
+                        <div class="num">5</div>
+                        <div class="peope-name">name</div>
+                    </li>
+                    <li class="li-card">
+                        <div class="num">6</div>
+                        <div class="peope-name">name</div>
+                    </li> -->
+                </ul>
             </div>
-            <div id="chat-input" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-            <textarea name="msg" id="inputMsg"></textarea>
-            <button>发送</button>
+            <div id="chat" class="col-lg-8 col-md-8 col-xs-4 col-sm-4">
+                <div id="chat-display" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    天黑请闭眼
+                </div>
             </div>
+            <div id="right-card" class="col-lg-2 col-md-2 col-xs-4 col-sm-4">
+                 <ul>
+                    <!-- <li class="li-card">
+                        <div class="num">7</div>
+                        <div class="peope-name">name</div>
+                    </li>
+                    <li class="li-card">
+                        <div class="num">8</div>
+                        <div class="peope-name">name</div>
+                    </li>
+                    <li class="li-card">
+                        <div class="num">9</div>
+                        <div class="peope-name">name</div>
+                    </li>
+                    <li class="li-card">
+                        <div class="num">10</div>
+                        <div class="peope-name">name</div>
+                    </li>
+                    <li class="li-card">
+                        <div class="num">11</div>
+                        <div class="peope-name">name</div>
+                    </li>
+                    <li class="li-card">
+                        <div class="num">12</div>
+                        <div class="peope-name">name</div>
+                    </li> -->
+
+                </ul>
+            </div>
+          </div>
         </div>
-        <div id="right-card" class="col-lg-2 col-md-2 col-xs-4 col-sm-4">
-             <ul>
-                <li class="li-card"></li>
-                <li class="li-card"></li>
-                <li class="li-card"></li>
-                <li class="li-card"></li>
-                <li class="li-card"></li>
-                <li class="li-card"></li>
-            </ul>
-        </div>
-      </div>
     </div>
 
     <script src="js/jquery-3.2.1.min.js"></script>
