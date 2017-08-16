@@ -8,7 +8,7 @@ body{
 }
 /*#3F72AF,#112D4E*/
 
-@media (min-width: 1200px) { 
+@media (min-width: 1024px) { 
 	body{
 		background: url(../img/wolfbg.jpg);
 		background-position: top;

@@ -10,11 +10,20 @@ $(function(){
     });
 
 	$(".li-card").click(function(){
-		$(this).removeClass('animated flipInY').addClass('animated flipInY bc').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-      	$(this).removeClass('animated flipInY');
-    });
-		
-
+		clickChangeimg($(this),'bc');
 	})
 
+
 })
+/*卡牌背景图片修改*/
+function clickChangeimg(obj,str){
+	if(obj.hasClass(str)){
+		obj.removeClass().addClass('li-card animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      	obj.removeClass('animated flipInY');
+    	});
+	}else{
+		obj.addClass('animated flipInY '+str).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      	obj.removeClass('animated flipInY');
+    	});
+	}
+}
