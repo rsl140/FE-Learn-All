@@ -24,16 +24,24 @@ nav div:hover,.check{
 	color: #fff0e9;
 }
 /*index*/
-.imgofme{
+.imgofme1,.imgofme2{
 	width: 230px;
 	height: 230px;
 	border-radius: 50%;
 	border: 3px solid #947a6d;
-	background: url(../img/1.jpg) no-repeat;
-	background-position: -35px -70px;
 	display: block;
 	margin: auto;
 	/*float: left;*/
+}
+.imgofme1{
+	background: url(../img/2.jpg) no-repeat;
+	background-position: -40px -10px;
+    background-size: cover;
+}
+.imgofme2{
+	background: url(../img/1.jpg) no-repeat;
+	background-position: -44px 0px;
+    background-size: cover;
 }
 .imgoftitle{
 	padding: 20px;
