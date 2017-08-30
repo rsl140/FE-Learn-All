@@ -107,6 +107,7 @@ li{
 }
 #chat-display{
 	padding: 0;
+	position: relative;
 }
 #chat-input{
 	padding: 3px;
@@ -115,3 +116,4 @@ li{
 .bc{
 	background-image: url(../img/villager.jpg);
 }
+/*画布*/

@@ -12,8 +12,7 @@ $(function(){
 	$(".li-card").click(function(){
 		clickChangeimg($(this),'bc');
 	})
-
-
+	/*绘制计时器*/
 })
 /*卡牌背景图片修改*/
 function clickChangeimg(obj,str){
@@ -27,3 +26,4 @@ function clickChangeimg(obj,str){
     	});
 	}
 }
+
