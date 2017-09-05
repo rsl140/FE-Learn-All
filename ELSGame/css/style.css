@@ -1,3 +1,14 @@
+.center {
+	position: absolute;
+	width: 400px;
+    height: 300px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 .game {
 	width: 200px;
 	height: 400px;
@@ -45,4 +56,43 @@
 .done {
 	background-color: gray;
 	border: 1px solid black;
+}
+#gameover {
+	color: red;
+	font-weight: bold;
+	position: absolute;
+    margin-left: -205px;
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+.button {
+    border: 1px solid #F9F9F9;
+    width: 46px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #8F8787;
+    background-color: #EBCBAE;
+    cursor: pointer;
+}
+.width100 {
+	width: 70px;
+}
+.ml48 {
+	margin-left: 48px;
+}
+
+.fl {
+	float: left;
+}
+.clearfix::before, .clearfix::after {
+    content: " ";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
 }

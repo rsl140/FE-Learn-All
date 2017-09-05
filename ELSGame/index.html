@@ -6,12 +6,28 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="game" id="game"></div>
-	<div class="next" id="next"></div>
-	<div class="info">
-		<div>已用时：<span id="time">0</span>s</div>
-		<div>已得分：<span id="score">0</span>分</div>
-		<div id="gameover"></div>
+	<div class="center">
+		<div class="game" id="game"></div>
+		<div class="next" id="next"></div>
+		<div class="info">
+			<div>已用时：<span id="time">0</span>s</div>
+			<div>已得分：<span id="score">0</span>分</div>
+			<div id="gameover"></div>
+			<div class="clearfix">
+				<div id="new" class="button width100 fl">New</div>
+				<div id="pause" class="button width100 fl">Pause</div>
+			</div>
+			<div class="clearfix">
+				<div id="up" class="button ml48">up</div>
+				<div id="left" class="button fl">left</div>
+				<div id="down" class="button fl">down</div>
+				<div id="right" class="button fl">right</div>
+			</div>
+			<div id="fall" class="button ml48">Fall</div>
+			<div>上->旋转 左->左移 右->右移 下->下移 空格->下坠 N->重新开始 P->暂停</div>
+			<div>100，400，1000，2000分时会加速</div>
+		</div>
+
 	</div>
 <script src="js/square.js"></script>
 <script src="js/squareFactory.js"></script>

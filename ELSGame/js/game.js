@@ -248,6 +248,7 @@ var Game = function() {
 		}
 		score = score + s;
 		scoreDiv.innerHTML = score;
+		return score;
 	}
 	// 游戏结束
 	var gameOver = function(win) {

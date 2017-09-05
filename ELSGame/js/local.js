@@ -2,7 +2,7 @@ var Local = function() {
 	// 游戏对象
 	var game;
 	// 时间间隔
-	var INTERVAL = 200;
+	var INTERVAL = 500;
 	// 定时器
 	var timer = null;
 	// 时间计数器
@@ -22,8 +22,33 @@ var Local = function() {
 				game.left();
 			} else if(e.keyCode == 32) { // 下落 space
 				game.fall();
+			} else if(e.keyCode == 78) { // 重新开始 N
+				newGame();
+			} else if(e.keyCode == 80) { // 暂停 P
+				pause();
 			}
 		}
+	}
+	// 绑定点击事件
+	var bindClickEvent = function() {
+		document.onclick = function(e) {
+            var target = e.target.getAttribute("id");
+            if (target === "up") {
+                game.rotate();
+            } else if (target === "right") {
+                game.right();
+            } else if (target === "down") {
+                game.down();
+            } else if (target === "left") {
+                game.left();
+            } else if (target === "fall") {
+                game.fall();
+            } else if (target === "pause") {
+                pause();
+            } else if (target === "new") {
+                newGame();
+            }
+        }
 	}
 	// 移动
 	var move = function() {
@@ -32,7 +57,25 @@ var Local = function() {
 			game.fixed();
 			var line = game.checkClear();
 			if(line) {
-				game.addScore(line);
+				// 通过分数加快速度
+				var score =game.addScore(line);
+				switch(score) {
+					case 100:
+						INTERVAL = 400;
+						break;
+					case 400:
+						INTERVAL = 300;
+						break;
+					case 1000:
+						INTERVAL = 200;
+						break;
+					case 2000:
+						INTERVAL = 100;
+						break;
+				}
+				clearInterval(timer);
+				timer = null;
+				timer = setInterval(move, INTERVAL);
 			}
 			var gameOver = game.checkGameOver();
 			if(gameOver) {
@@ -74,6 +117,7 @@ var Local = function() {
 		game = new Game();
 		game.init(doms, generateType(), generateDir());
 		bindKeyEvent();
+		bindClickEvent();
 		game.performNext(generateType(), generateDir());
 		timer = setInterval(move, INTERVAL);
 	}
@@ -84,7 +128,27 @@ var Local = function() {
 			timer = null;
 		}
 		document.onkeydown = null;
+		document.onclick = null;
 	}
+	// 暂停
+	var pause = function() {
+		if(timer){
+			clearInterval(timer);
+			timer = null;
+		} else {
+			timer = setInterval(move, INTERVAL);
+		}
+	}
+	// 重新开始
+	var newGame = function() {
+		document.getElementById("gameover").innerHTML = "";
+        document.getElementById("time").innerHTML = "0";
+        document.getElementById("score").innerHTML = "0";
+        stop();
+        time = 0;
+        start();
+	}
+
 	// 导出API
 	this.start = start;
 }
