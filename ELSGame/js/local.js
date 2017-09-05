@@ -59,23 +59,20 @@ var Local = function() {
 			if(line) {
 				// 通过分数加快速度
 				var score =game.addScore(line);
-				switch(score) {
-					case 100:
-						INTERVAL = 400;
-						break;
-					case 400:
-						INTERVAL = 300;
-						break;
-					case 1000:
-						INTERVAL = 200;
-						break;
-					case 2000:
-						INTERVAL = 100;
-						break;
+				if(score >= 100) {
+					INTERVAL = 400;
+				} else if(score >= 400) {
+					INTERVAL = 300;
+				} else if(score >= 1000) {
+					INTERVAL = 200;
+				} else if(score >= 2000) {
+					INTERVAL = 1000;
 				}
 				clearInterval(timer);
 				timer = null;
 				timer = setInterval(move, INTERVAL);
+				// document.getElementById('display').style.display = "block";
+				// setTimeout(function(){document.getElementById('display').style.display = "none";},3000);
 			}
 			var gameOver = game.checkGameOver();
 			if(gameOver) {

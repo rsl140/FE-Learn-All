@@ -66,6 +66,12 @@
     font-size: 25px;
 
 }
+#display {
+	position: absolute;
+	margin-top: -20px;
+    margin-left: 93px;
+    color: red;
+}
 .button {
     border: 1px solid #F9F9F9;
     width: 46px;
