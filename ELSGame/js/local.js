@@ -127,8 +127,7 @@ var Local = function() {
 			clearInterval(timer);
 			timer = null;
 		}
-		document.onkeydown = null;
-		document.onclick = null;
+		// document.onkeydown = null;
 	}
 	// 暂停
 	var pause = function() {
