@@ -1,0 +1,208 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+.clearfix::before, .clearfix::after {
+  	    content: " ";
+  	    display: table;
+  	}
+  	.clearfix::after {
+  	    clear: both;
+  	}
+  	.clearfix {
+  	    *zoom: 1;
+  	}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 4em;
+	font-weight: bold;
+}
+h2{
+	font-size: 3em;
+	font-weight: bold;
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+a{
+	display: inline-block;
+}
+#section0 a{
+	margin-right: 30px;
+}
+#section0 div{
+	margin-top: 10px;
+}
+.git,.blog,.email,.wechat{
+	width: 32px;
+	height: 32px;
+}
+.git{
+	background: url(../img/git.svg) no-repeat;
+}
+.blog{
+	background: url(../img/blog.svg) no-repeat;
+}
+.email{
+	background: url(../img/email.svg) no-repeat;
+}
+.wechat{
+	background: url(../img/we-chat.svg) no-repeat;
+}
+.git:hover{
+	background: url(../img/githover.svg) no-repeat;
+}
+.blog:hover{
+	background: url(../img/bloghover.svg) no-repeat;
+}
+.email:hover{
+	background: url(../img/emailhover.svg) no-repeat;
+}
+.wechat:hover{
+	background: url(../img/we-chathover.svg) no-repeat;
+}
+button{
+	outline: none;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+#dialog p{
+	width: 270px;
+	height: 233px;
+	background: url(../img/wechatEWM.png) no-repeat;
+}
+.ui-dialog-titlebar{
+	display: none;
+}
+
+#section1 h2{
+	color: #FCFEFE;
+	margin-bottom: 30px;
+}
+#section1 div{
+	margin-bottom: 5px;
+}
+#section1 .title{
+	color: #EAF6F6;
+	font-size: 1em;
+	font-weight: bold;
+}
+#section1 .description{
+	color: #6E828A;
+}
+.tag{
+	background-color: #096254;
+    color: #aee2d9;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 2px 8px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    opacity: 0.5;
+}
+/*熟练*/
+.expert {
+    opacity: 1;
+}
+/*熟悉*/
+.familiar{
+	opacity: 0.75;
+}
+.heighlight{
+	color: #CFEE91;
+}
+.download{
+	font-size: 1.7em;
+}
+.download:hover{
+	color: #658525;
+}
+.project{
+	margin:0 7em 2em 13em !important;
+}
+.project .pjleft{
+	width: 64px;
+	height: 64px;
+	background:url(../img/project.svg) no-repeat;
+	display: inline-block;
+	float: left;
+}
+.project .pjright{
+    width: 33.333%;
+    float: left;
+    text-align: left;
+    margin-left: 2em;
+}
+.pjtitle{
+	font-size: 2em;
+}
+.pjtitle a{
+	display: inline-block;
+	color: rgba(0,0,0,0.5);
+}
+.pjtitle a:hover{
+	color: #CFEE91;
+}
