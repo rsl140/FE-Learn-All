@@ -44,6 +44,23 @@
  * @return {number}
  */
 var reverse = function(x) {
+  // 转为数组
+  let numberToArray = String(Math.abs(x)).split('');
 
+  // 从数组末尾取值并更新数组长度
+  let result = '';
+  for (let i = 0; i < numberToArray.length;) {
+    result += numberToArray.pop()
+  }
+
+  // 判断是正负
+  result = x > 0 ? Number(result) : - Number(result);
+
+  // 长度是否溢出
+  if (result > Math.pow(2, 31) - 1 || result < - Math.pow(2, 31)) {
+    result = 0
+  }
+
+  return result
 };
 
